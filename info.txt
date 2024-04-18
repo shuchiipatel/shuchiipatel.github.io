@@ -1,0 +1,8 @@
+highlight yellow    #ffd700  =>  #C6DE41
+background blue     #022c43  =>  #2D6E7E
+body font grey      #444  =>  #153B44
+navbar icons grey   #4d4d4e  =>  #153B44
+navbar black        #181818  =>  #071C21
+
+logo m dark:    #2D6E7E
+logo m light:   #C6DE41

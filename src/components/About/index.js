@@ -20,16 +20,8 @@ const About = () => {
     }, []);
 
     const handleDownload = () => {
-        // Replace 'resume-url' with the URL of your PDF resume
         const resumeUrl = 'https://mithilparmar-portfolio.s3.us-west-1.amazonaws.com/assets/files/Mithil_Parmar_Resume.pdf';
-        // Create a temporary anchor element
-        const anchorElement = document.createElement('a');
-        // Set the href attribute to the PDF file URL
-        anchorElement.href = resumeUrl;
-        // Set the download attribute to prompt the browser to download the file
-        anchorElement.download = 'Mithil_Parmar_Resume.pdf';
-        // Programmatically trigger a click event on the anchor element
-        anchorElement.click();
+        window.open(resumeUrl, '_blank');
     };
     
     return (

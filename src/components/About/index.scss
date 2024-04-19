@@ -41,3 +41,25 @@
         color: #071C21;
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+
+    .flat-button {
+        float: none;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 125px;
+    }
+
+    .profile-container {
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+}

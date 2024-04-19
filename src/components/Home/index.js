@@ -10,8 +10,8 @@ import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['i','t','h','i','l','.']
-    const jobArray = ['A',' ','S','o','f','t','w','a','r','e',' ','D','e','v','e','l','o','p','e','r','.']
+    const nameArray = 'ithil.'.split('')
+    const jobArray = 'A Software Developer.'.split('')
 
     useEffect(() => {
         // Store the timeout ID

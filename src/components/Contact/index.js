@@ -48,14 +48,15 @@ const Contact = () => {
                     <h1>
                         <AnimatedLetters 
                             letterClass={letterClass}
-                            strArray={['C','o','n','t','a','c','t',' ','M','e']}
+                            strArray={'Contact Me'.split('')}
                             idx={15}
                         />
                     </h1>
                     <p>
-                        Embarking on a journey to find the perfect job that aligns well with my interests! If you have a lead on an opportunity, 
-                        questions about my journey, or just want to share a hello, my inbox is always open for your emails. 
-                        Your guidance, opportunities, and conversations are not just welcomed, they're eagerly anticipated!
+                    Embarking on a quest for the ideal job that resonates with my passions! 
+                    Whether you have an opportunity, questions about my journey, or simply 
+                    want to say hello, my inbox is open for your emails. 
+                    Your guidance, opportunities, and conversations are eagerly awaited and highly valued!
                     </p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>

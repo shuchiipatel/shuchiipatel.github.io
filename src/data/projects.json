@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "cover": "/projects/data-compression-platform/cover.png",
+            "title": "Data Compression Platform",
+            "description": "Machine Learning, Computer Vision, SR-GAN, Python, Flask",
+            "url": "https://github.com/mithilparmar/data-compression-platform"
+        },
+        {
+            "cover": "/projects/steam-game-recommender-system/cover.png",
+            "title": "Games Recommender System",
+            "description": "Data Mining, Restricted Boltzmann Machine (RBM), Python, React.js, Flask",
+            "url": "https://github.com/mithilparmar/Steam-Game-Recommender-System"
+        },
+        {
+            "cover": "/projects/agent57/cover.png",
+            "title": "Agent57",
+            "description": "Reinforcement Learning, Deep Q Networks (DQN), Python",
+            "url": "https://github.com/mithilparmar/Reinforcement-Learning-Agent-Replication-Agent57"
+        }
+    ]
+}

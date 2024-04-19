@@ -5,11 +5,13 @@
 }
 
 .top-tags {
+    user-select: none;
     bottom: auto;
     top: 35px;
 }
 
 .tags {
+    user-select: none;
     color: #C6DE41;
     opacity: 0.6;
     position: absolute;
@@ -20,6 +22,7 @@
 }
 
 .bottom-tag-html {
+    user-select: none;
     margin-left: -20px;
 }
 
@@ -39,6 +42,9 @@
 }
 
 .about-page {
+
+    user-select: none;
+
     .text-zone {
         position: absolute;
         left: 10%;

@@ -130,6 +130,9 @@
 
 
 .contact-page {
+
+    user-select: none;
+
     .text-zone {
         position: absolute;
         left: 10%;
@@ -198,6 +201,12 @@
             &:nth-of-type(4) {
                 animation-delay: 1.4s;
             }
+        }
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #FFFFFF;
         }
     }
 }

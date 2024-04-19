@@ -1,8 +1,8 @@
 import './index.scss'
 import LogoM from '../../../assets/images/logo-m.png'
 import { useEffect, useRef } from 'react'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-import gsap from 'gsap-trial'
+import anime from 'animejs';
+
 
 
 const Logo = () => {
@@ -13,43 +13,32 @@ const Logo = () => {
 
     const didAnimate = useRef(false);
 
+
     useEffect(() => {
         if (didAnimate.current) { return; }
         didAnimate.current = true;
 
-        gsap.registerPlugin(DrawSVGPlugin)
 
-        gsap.timeline()
-        .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-        })
-        .from(outlineLogoRef.current, {
-            drawSVG: 0,
-            duration: 20,
-        })
-
-        gsap.fromTo(
-            solidLogoRef.current, {
-                opacity: 0,
-
-            }, {
+        anime.timeline()
+            .add({
+                targets: bgRef.current,
                 opacity: 1,
-                delay: 4,
-                duration: 4,
-            }
-        )
-
-        /*gsap.fromTo(
-            outlineLogoRef.current, {
+                duration: 1000,
+            })
+            .add({
+                targets: outlineLogoRef.current,
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 10000,
+            }, 0) // Set offset to 0 to start the animation simultaneously
+            .add({
+                targets: solidLogoRef.current,
                 opacity: 1,
+                easing: 'easeInOutSine',
+                duration: 1000,
+                delay:3000,
+            }, 0); // Set offset to 0 to start the animation simultaneously
 
-            }, {
-                opacity: 0,
-                delay: 4,
-                duration: 4,
-            }
-        )*/
     },[])
     
     return (

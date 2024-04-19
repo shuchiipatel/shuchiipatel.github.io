@@ -53,13 +53,16 @@ const Sidebar = () => {
                 >
                     <FontAwesomeIcon icon={faEnvelope} color='#153B44' />
                 </NavLink>
-                <FontAwesomeIcon 
-                    onClick={() => setShowNav(false)}
-                    icon={faClose}
-                    color='#153B44'
-                    size='3x'
-                    className='close-icon'
-                />
+                {/* Highlighted: Close button rendering conditionally */}
+                {showNav && (
+                    <FontAwesomeIcon 
+                        onClick={() => setShowNav(false)}
+                        icon={faClose}
+                        color='#153B44'
+                        size='3x'
+                        className='close-icon'
+                    />
+                )}
             </nav>
             <ul>
                 <li>

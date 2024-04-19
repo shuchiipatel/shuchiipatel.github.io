@@ -29,6 +29,7 @@ const Logo = () => {
                 targets: outlineLogoRef.current,
                 strokeDashoffset: [anime.setDashoffset, 0],
                 easing: 'easeInOutSine',
+                delay: 1500,
                 duration: 10000,
             }, 0) // Set offset to 0 to start the animation simultaneously
             .add({
@@ -36,7 +37,7 @@ const Logo = () => {
                 opacity: 1,
                 easing: 'easeInOutSine',
                 duration: 1000,
-                delay:3000,
+                delay:4500,
             }, 0); // Set offset to 0 to start the animation simultaneously
 
     },[])

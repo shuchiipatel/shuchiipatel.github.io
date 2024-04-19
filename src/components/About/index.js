@@ -2,8 +2,8 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react';
 import ProfilePic from '../../assets/images/profile_pic.png'
-import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
+import { Link } from 'react-router-dom';
 
 const About = () => {
 
@@ -18,6 +18,19 @@ const About = () => {
         // Cleanup function to clear the timeout if the component unmounts
         return () => clearTimeout(timeoutId);
     }, []);
+
+    const handleDownload = () => {
+        // Replace 'resume-url' with the URL of your PDF resume
+        const resumeUrl = 'https://mithilparmar-portfolio.s3.us-west-1.amazonaws.com/assets/files/Mithil_Parmar_Resume.pdf';
+        // Create a temporary anchor element
+        const anchorElement = document.createElement('a');
+        // Set the href attribute to the PDF file URL
+        anchorElement.href = resumeUrl;
+        // Set the download attribute to prompt the browser to download the file
+        anchorElement.download = 'Mithil_Parmar_Resume.pdf';
+        // Programmatically trigger a click event on the anchor element
+        anchorElement.click();
+    };
     
     return (
         <>
@@ -43,7 +56,7 @@ const About = () => {
                         beating a few OpenCV algorithms.</p>
                     <p>As a software engineer, I thrive on collaboration and continuous learning, always seeking to explore 
                         the latest technologies and methodologies.</p>
-                    <Link to='https://www.linkedin.com/in/mithilparmar/overlay/1713433434303/single-media-viewer/?profileId=ACoAAAmE0V4BoU3gCM1PaTJVR1IBhV00iuMa83M' className='flat-button'>MY RESUME</Link>
+                    <Link onClick={handleDownload} className='flat-button'>MY RESUME</Link>
                 </div>
 
                 <div class="profile-container">

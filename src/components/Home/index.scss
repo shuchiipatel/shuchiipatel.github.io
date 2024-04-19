@@ -91,6 +91,39 @@
 }
 
 
+
+@media screen and (max-width: 1440px) {
+    .home-page {
+       .text-zone {
+            left: 15%;
+            width: 30%;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 36px;
+
+            img {
+                width: 35px;
+            }
+        }
+
+        .logo-container {
+            width: 350px;
+
+            svg {
+                position: absolute;
+                top: auto;
+                right: auto;
+                bottom: auto;
+                left: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 1200px) {
     .tags,
     .home-page h1::before,
@@ -101,7 +134,8 @@
     .home-page {
         .text-zone {
             position: initial;
-            width: 100%;
+            width: 414.75px;
+            margin: auto;
             transform: none;
             padding: 30px;
             box-sizing: border-box;

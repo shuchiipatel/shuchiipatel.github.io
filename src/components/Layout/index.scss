@@ -125,6 +125,19 @@
 }
 
 
+@media screen and (max-width: 1440px) {
+    .container {
+
+        &.about-page,
+        &.project-page {
+            .text-zone {
+                left: 15%;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 1200px) {
     .page {
         position: initial;
